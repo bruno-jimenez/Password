@@ -7,8 +7,15 @@ alphabet_max=[chr(i) for i in range(ord('A'),ord('Z')+1)]
 chiffres = [ chr(i) for i in range(48,58) ]
 caracteres_speciaux = [ '%' , '_' , '-' , '!' , '$' , '^' , '&' , '#' , '(' , ')' , '[' , ']' , '=' , '@']
 
-print(alphabet_min)
-print(alphabet_max)
-print(chiffres)
-print(caracteres_speciaux)
+spc=input("do you want special caractere in your pwd ? Y/N ")
 
+if "Y" in spc:
+    print(alphabet_min)
+    print(alphabet_max)
+    print(chiffres)
+    print(caracteres_speciaux)
+
+if "N" in spc:
+    print(alphabet_min)
+    print(alphabet_max)
+    print(chiffres)
