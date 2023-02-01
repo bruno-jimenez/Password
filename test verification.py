@@ -1,10 +1,11 @@
 #[-------------------------------------------]
-# create the list for all input for pwd 
+#   create the list for all input for pwd 
 #[-------------------------------------------]
+
 alphabet_min="abcdefghijklmpnopqrstuvwxyz"
 alphabet_maj="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-chiffres = "1234567890"
-caracteres_speciaux = "!@#$%^&*()_-+=[]"
+chiffres ="1234567890"
+caracteres_speciaux ="!@#$%^&*()_-+=[]"
 
 #[-------------------------------------------]
 # cretion of all entry for the pwd 
@@ -20,11 +21,13 @@ verification_loop= True
 #[-------------------------------------------]
 # function for verification pwd 
 #[-------------------------------------------]
+
 def verification():
 
 #[-------------------------------------------]
 # verification of all entry in the pwd 
 #[-------------------------------------------]
+
     psw_input=list(input("Tape your password , the password must contain 8 caractere minimum , 1 number and 1 upper letter : "))
     psw_input= str(psw_input)
     psw= 0
@@ -35,30 +38,35 @@ def verification():
         psw_entry= True
     else:
         psw_entry= False
+        print("your password no contain 8 caractere minimum")
        
     if chiffres in psw_input: 
         print("your password contain number")
         chiffres_entry= True 
     else:
-        chiffres_entry= False   
+        chiffres_entry= False
+        print("your password no contain number") 
 
     if alphabet_maj in psw_input:
         print("your password contain upper letter")
         alphabet_maj_entry= True
     else:
         alphabet_maj_entry= False
+        print("your password  no contain upper letter")
 
     if alphabet_min in psw_input: 
         print("your password contain lower letter")
         alphabet_min_entry= True
     else:
         alphabet_min_entry= False
+        print("your password no contain lower letter")
 
     if caracteres_speciaux in psw_input: 
         print("your password contain special caratere")
         caracteres_speciaux_entry= True
     else:
         caracteres_speciaux_entry= False
+        print("your password  no contain special caratere")
         
 #[-------------------------------------------]
 # creation of the encrypting and validation of password or not
