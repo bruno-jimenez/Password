@@ -40,28 +40,28 @@ def verification():
         psw_entry= False
         print("your password no contain 8 caractere minimum")
        
-    if chiffres in psw_input: 
+    if psw_input in chiffres: 
         print("your password contain number")
         chiffres_entry= True 
     else:
         chiffres_entry= False
         print("your password no contain number") 
 
-    if alphabet_maj in psw_input:
+    if psw_input in alphabet_maj:
         print("your password contain upper letter")
         alphabet_maj_entry= True
     else:
         alphabet_maj_entry= False
         print("your password  no contain upper letter")
 
-    if alphabet_min in psw_input: 
+    if psw_input in alphabet_min: 
         print("your password contain lower letter")
         alphabet_min_entry= True
     else:
         alphabet_min_entry= False
         print("your password no contain lower letter")
 
-    if caracteres_speciaux in psw_input: 
+    if psw_input in caracteres_speciaux: 
         print("your password contain special caratere")
         caracteres_speciaux_entry= True
     else:
